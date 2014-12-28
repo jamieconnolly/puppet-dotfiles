@@ -13,7 +13,6 @@ include dotfiles
 The following variables may be automatically overridden with Hiera:
 
 ``` yaml
----
 dotfiles::dir:      "${boxen::config::srcdir}/dotfiles"
 dotfiles::source:   "${::github_login}/dotfiles"
 
