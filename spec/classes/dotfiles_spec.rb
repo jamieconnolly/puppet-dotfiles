@@ -41,4 +41,8 @@ describe 'dotfiles' do
       })
     end
   end
+
+  context 'symlinks => undefined' do
+    it { should have_dotfiles__symlink_resource_count(0) }
+  end
 end
