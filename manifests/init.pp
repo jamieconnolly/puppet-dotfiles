@@ -24,7 +24,7 @@ class dotfiles(
 
   if is_hash($symlinks) {
     create_resources(dotfiles::symlink, $symlinks, $defaults)
-  } else {
+  } elsif is_array($symlinks) {
     ensure_resource(dotfiles::symlink, $symlinks, $defaults)
   }
 }
